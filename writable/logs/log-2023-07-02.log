@@ -1,0 +1,635 @@
+CRITICAL - 2023-07-02 16:23:10 --> Call to undefined method App\Models\PermisosModel::getPermisos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Permisos.php(20): CodeIgniter\Model->__call('getPermisos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Permisos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 16:23:18 --> Call to undefined method App\Models\PermisosModel::getPermisos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Permisos.php(20): CodeIgniter\Model->__call('getPermisos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Permisos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 16:23:40 --> Call to undefined method App\Models\PermisosModel::getPermisos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Permisos.php(20): CodeIgniter\Model->__call('getPermisos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Permisos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Permisos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 16:51:46 --> Call to undefined method App\Models\ProductosModel::getProductos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Productos.php(20): CodeIgniter\Model->__call('getProductos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Productos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:04:24 --> Call to undefined method App\Models\ReclamosModel::getReclamos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reclamos.php(20): CodeIgniter\Model->__call('getReclamos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:04:26 --> Call to undefined method App\Models\ReclamosModel::getReclamos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reclamos.php(20): CodeIgniter\Model->__call('getReclamos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:04:43 --> Call to undefined method App\Models\ReclamosModel::getReclamos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reclamos.php(20): CodeIgniter\Model->__call('getReclamos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:05:11 --> Call to undefined method App\Models\ReclamosModel::getReclamos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reclamos.php(20): CodeIgniter\Model->__call('getReclamos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:05:41 --> Call to undefined method App\Models\ReclamosModel::getReclamos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reclamos.php(20): CodeIgniter\Model->__call('getReclamos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:05:44 --> Call to undefined method App\Models\ReclamosModel::getReclamos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reclamos.php(20): CodeIgniter\Model->__call('getReclamos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:05:48 --> Call to undefined method App\Models\ReclamosModel::getReclamos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reclamos.php(20): CodeIgniter\Model->__call('getReclamos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 17:09:19 --> mysqli_sql_exception: Unknown column 'prov_estado' in 'where clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/system/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/app/public_html/panca/app/Controllers/Reclamos.php(20): CodeIgniter\BaseModel->findAll()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reclamos->index()
+#8 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+#9 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-02 17:09:19 --> Unknown column 'prov_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reclamos`
+WHERE `prov_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reclamos`
+WHERE `prov_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reclamos`
+WHERE `prov_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reclamos`
+WHERE `prov_estado` = :prov_estado:', [...], false)
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/Reclamos.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->index()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:10:58 --> Call to undefined method App\Models\ReservasModel::getReservas
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reservas.php(20): CodeIgniter\Model->__call('getReservas', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reservas->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:11:06 --> Call to undefined method App\Models\ReservasModel::getReservas
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reservas.php(20): CodeIgniter\Model->__call('getReservas', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reservas->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:23:25 --> Trying to access array offset on value of type null
+in APPPATH/Views/welcome_message.php on line 57.
+ 1 APPPATH/Views/welcome_message.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', '/home/app/public_html/panca/app/Views/welcome_message.php', 57, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/home/app/public_html/panca/app/Views/welcome_message.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('welcome_message')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 17:44:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`trabajadores`, CONSTRAINT `trabajadores_ibfk_2` FOREIGN KEY (`per_id`) REFERENCES `personas` (`per_id`) ON UPDATE CASCADE) in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panca/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panca/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panca/app/Controllers/Trabajadores.php(129): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Trabajadores->create()
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-02 17:44:21 --> Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`trabajadores`, CONSTRAINT `trabajadores_ibfk_2` FOREIGN KEY (`per_id`) REFERENCES `personas` (`per_id`) ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `trabajadores` (`per_id`, `tra_sueldo`, `titra_id`) VALUES (\'18\', \'1200\', \'2\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `trabajadores` (`per_id`, `tra_sueldo`, `titra_id`) VALUES (\'18\', \'1200\', \'2\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `trabajadores` (`per_id`, `tra_sueldo`, `titra_id`) VALUES (\'18\', \'1200\', \'2\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `trabajadores` (`per_id`, `tra_sueldo`, `titra_id`) VALUES (:per_id:, :tra_sueldo:, :titra_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Trabajadores.php(129): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Trabajadores->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 17:44:28 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`trabajadores`, CONSTRAINT `trabajadores_ibfk_2` FOREIGN KEY (`per_id`) REFERENCES `personas` (`per_id`) ON UPDATE CASCADE) in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panca/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panca/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panca/app/Controllers/Trabajadores.php(129): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Trabajadores->create()
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-02 17:44:28 --> Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`trabajadores`, CONSTRAINT `trabajadores_ibfk_2` FOREIGN KEY (`per_id`) REFERENCES `personas` (`per_id`) ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `trabajadores` (`per_id`, `tra_sueldo`, `titra_id`) VALUES (\'25\', \'1200\', \'2\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `trabajadores` (`per_id`, `tra_sueldo`, `titra_id`) VALUES (\'25\', \'1200\', \'2\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `trabajadores` (`per_id`, `tra_sueldo`, `titra_id`) VALUES (\'25\', \'1200\', \'2\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `trabajadores` (`per_id`, `tra_sueldo`, `titra_id`) VALUES (:per_id:, :tra_sueldo:, :titra_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Trabajadores.php(129): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Trabajadores->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 17:50:09 --> mysqli_sql_exception: Unknown column 'prov_estado' in 'where clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+#6 /home/app/public_html/panca/app/Controllers/Reservas.php(65): CodeIgniter\BaseModel->find('2')
+#7 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reservas->show('2')
+#8 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#9 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-02 17:50:09 --> Unknown column 'prov_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = 1
+AND `reserva`.`res_id` = \'2\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = 1
+AND `reserva`.`res_id` = \'2\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = 1
+AND `reserva`.`res_id` = \'2\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = :prov_estado:
+AND `reserva`.`res_id` = :reserva.res_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+ 7 APPPATH/Controllers/Reservas.php(65): CodeIgniter\BaseModel->find('2')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reservas->show('2')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 17:50:12 --> mysqli_sql_exception: Unknown column 'prov_estado' in 'where clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+#6 /home/app/public_html/panca/app/Controllers/Reservas.php(65): CodeIgniter\BaseModel->find('2')
+#7 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reservas->show('2')
+#8 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#9 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-02 17:50:12 --> Unknown column 'prov_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = 1
+AND `reserva`.`res_id` = \'2\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = 1
+AND `reserva`.`res_id` = \'2\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = 1
+AND `reserva`.`res_id` = \'2\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = :prov_estado:
+AND `reserva`.`res_id` = :reserva.res_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+ 7 APPPATH/Controllers/Reservas.php(65): CodeIgniter\BaseModel->find('2')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reservas->show('2')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 17:50:15 --> mysqli_sql_exception: Unknown column 'prov_estado' in 'where clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#6 /home/app/public_html/panca/app/Controllers/Reservas.php(65): CodeIgniter\BaseModel->find('1')
+#7 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reservas->show('1')
+#8 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#9 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-02 17:50:15 --> Unknown column 'prov_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = 1
+AND `reserva`.`res_id` = \'1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = 1
+AND `reserva`.`res_id` = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = 1
+AND `reserva`.`res_id` = \'1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserva`
+WHERE `prov_estado` = :prov_estado:
+AND `reserva`.`res_id` = :reserva.res_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH/Controllers/Reservas.php(65): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reservas->show('1')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:58:11 --> Undefined index: sucu_id
+in APPPATH/Controllers/Reclamos.php on line 197.
+ 1 APPPATH/Controllers/Reclamos.php(197): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: sucu_id', '/home/app/public_html/panca/app/Controllers/Reclamos.php', 197, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->update('3')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:59:19 --> Call to undefined method App\Models\ReclamosModel::getId
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reclamos.php(65): CodeIgniter\Model->__call('getId', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->show('3')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-02 17:59:22 --> Call to undefined method App\Models\ReclamosModel::getId
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Reclamos.php(65): CodeIgniter\Model->__call('getId', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->show('3')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 18:00:09 --> mysqli_sql_exception: Unknown column 'res_estado' in 'where clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '3')
+#6 /home/app/public_html/panca/app/Controllers/Reclamos.php(65): CodeIgniter\BaseModel->find('3')
+#7 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reclamos->show('3')
+#8 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+#9 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-02 18:00:09 --> Unknown column 'res_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = 1
+AND `reclamos`.`recl_id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = 1
+AND `reclamos`.`recl_id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = 1
+AND `reclamos`.`recl_id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = :res_estado:
+AND `reclamos`.`recl_id` = :reclamos.recl_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH/Controllers/Reclamos.php(65): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->show('3')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 18:00:11 --> mysqli_sql_exception: Unknown column 'res_estado' in 'where clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '3')
+#6 /home/app/public_html/panca/app/Controllers/Reclamos.php(65): CodeIgniter\BaseModel->find('3')
+#7 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reclamos->show('3')
+#8 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+#9 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-02 18:00:11 --> Unknown column 'res_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = 1
+AND `reclamos`.`recl_id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = 1
+AND `reclamos`.`recl_id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = 1
+AND `reclamos`.`recl_id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = :res_estado:
+AND `reclamos`.`recl_id` = :reclamos.recl_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH/Controllers/Reclamos.php(65): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->show('3')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 18:00:13 --> mysqli_sql_exception: Unknown column 'res_estado' in 'where clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '3')
+#6 /home/app/public_html/panca/app/Controllers/Reclamos.php(65): CodeIgniter\BaseModel->find('3')
+#7 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reclamos->show('3')
+#8 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+#9 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-02 18:00:13 --> Unknown column 'res_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = 1
+AND `reclamos`.`recl_id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = 1
+AND `reclamos`.`recl_id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = 1
+AND `reclamos`.`recl_id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reclamos`
+WHERE `res_estado` = :res_estado:
+AND `reclamos`.`recl_id` = :reclamos.recl_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH/Controllers/Reclamos.php(65): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reclamos->show('3')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reclamos))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 18:24:40 --> mysqli_sql_exception: Unknown column 'r.per_id' in 'on clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/ReservasModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/Reservas.php(20): App\Models\ReservasModel->getReservas()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reservas->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 18:24:40 --> Unknown column 'r.per_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = :r.res_estado:', [...], false)
+ 5 APPPATH/Models/ReservasModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Reservas.php(20): App\Models\ReservasModel->getReservas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reservas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 18:25:09 --> mysqli_sql_exception: Unknown column 'r.per_id' in 'on clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/ReservasModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/Reservas.php(20): App\Models\ReservasModel->getReservas()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reservas->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 18:25:09 --> Unknown column 'r.per_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = :r.res_estado:', [...], false)
+ 5 APPPATH/Models/ReservasModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Reservas.php(20): App\Models\ReservasModel->getReservas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reservas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 18:25:11 --> mysqli_sql_exception: Unknown column 'r.per_id' in 'on clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/ReservasModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/Reservas.php(20): App\Models\ReservasModel->getReservas()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reservas->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 18:25:11 --> Unknown column 'r.per_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = :r.res_estado:', [...], false)
+ 5 APPPATH/Models/ReservasModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Reservas.php(20): App\Models\ReservasModel->getReservas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reservas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 18:25:49 --> mysqli_sql_exception: Unknown column 'r.per_id' in 'on clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/ReservasModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/Reservas.php(20): App\Models\ReservasModel->getReservas()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reservas->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 18:25:49 --> Unknown column 'r.per_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = :r.res_estado:', [...], false)
+ 5 APPPATH/Models/ReservasModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Reservas.php(20): App\Models\ReservasModel->getReservas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reservas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 18:25:57 --> mysqli_sql_exception: Unknown column 'r.per_id' in 'on clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/ReservasModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/Reservas.php(20): App\Models\ReservasModel->getReservas()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reservas->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 18:25:57 --> Unknown column 'r.per_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserva` `r`
+JOIN `personas` `p` ON `r`.`per_id` = `p`.`per_id`
+WHERE `r`.`res_estado` = :r.res_estado:', [...], false)
+ 5 APPPATH/Models/ReservasModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Reservas.php(20): App\Models\ReservasModel->getReservas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reservas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reservas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
