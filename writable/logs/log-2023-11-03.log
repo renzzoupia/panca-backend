@@ -1,0 +1,170 @@
+ERROR - 2023-11-03 05:48:31 --> mysqli_sql_exception: Duplicate entry '9' for key 'unq_cliente_clie_usua_id' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panca/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panca/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panca/app/Controllers/Cliente.php(140): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Cliente->create()
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-03 05:48:31 --> Duplicate entry '9' for key 'unq_cliente_clie_usua_id'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (\'9\', \'Cesar\', \'Fasa\', \'1111111\', \'1111111\', \'c@upeu.edu.pe\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (\'9\', \'Cesar\', \'Fasa\', \'1111111\', \'1111111\', \'c@upeu.edu.pe\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (\'9\', \'Cesar\', \'Fasa\', \'1111111\', \'1111111\', \'c@upeu.edu.pe\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (:clie_usua_id:, :clie_nombres:, :clie_apellidos:, :clie_dni:, :clie_celular:, :clie_correo:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Cliente.php(140): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Cliente->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-03 05:49:01 --> mysqli_sql_exception: Duplicate entry '9' for key 'unq_cliente_clie_usua_id' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panca/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panca/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panca/app/Controllers/Cliente.php(140): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Cliente->create()
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-03 05:49:01 --> Duplicate entry '9' for key 'unq_cliente_clie_usua_id'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (\'9\', \'Cesar\', \'Fasa\', \'1111111\', \'1111111\', \'c@upeu.edu.pe\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (\'9\', \'Cesar\', \'Fasa\', \'1111111\', \'1111111\', \'c@upeu.edu.pe\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (\'9\', \'Cesar\', \'Fasa\', \'1111111\', \'1111111\', \'c@upeu.edu.pe\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (:clie_usua_id:, :clie_nombres:, :clie_apellidos:, :clie_dni:, :clie_celular:, :clie_correo:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Cliente.php(140): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Cliente->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-03 06:04:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`cliente`, CONSTRAINT `fk_cliente_usuario` FOREIGN KEY (`clie_usua_id`) REFERENCES `usuario` (`usua_id`) ON UPDATE CASCADE) in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `cliente...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cliente...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cliente...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `cliente...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/app/public_html/panca/system/BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /home/app/public_html/panca/system/Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 /home/app/public_html/panca/app/Controllers/Cliente.php(216): CodeIgniter\Model->update('6', Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Cliente->update('6')
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-03 06:04:05 --> Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`cliente`, CONSTRAINT `fk_cliente_usuario` FOREIGN KEY (`clie_usua_id`) REFERENCES `usuario` (`usua_id`) ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `cliente` SET `clie_usua_id` = NULL, `clie_nombres` = \'cezar\', `clie_apellidos` = \'apellll\', `clie_dni` = \'77777\', `clie_celular` = \'77777\', `clie_correo` = \'a@ded.com \'
+WHERE `cliente`.`clie_id` IN (\'6\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cliente` SET `clie_usua_id` = NULL, `clie_nombres` = \'cezar\', `clie_apellidos` = \'apellll\', `clie_dni` = \'77777\', `clie_celular` = \'77777\', `clie_correo` = \'a@ded.com \'
+WHERE `cliente`.`clie_id` IN (\'6\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cliente` SET `clie_usua_id` = NULL, `clie_nombres` = \'cezar\', `clie_apellidos` = \'apellll\', `clie_dni` = \'77777\', `clie_celular` = \'77777\', `clie_correo` = \'a@ded.com \'
+WHERE `cliente`.`clie_id` IN (\'6\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `cliente` SET `clie_usua_id` = :clie_usua_id:, `clie_nombres` = :clie_nombres:, `clie_apellidos` = :clie_apellidos:, `clie_dni` = :clie_dni:, `clie_celular` = :clie_celular:, `clie_correo` = :clie_correo:
+WHERE `cliente`.`clie_id` IN :cliente.clie_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH/Controllers/Cliente.php(216): CodeIgniter\Model->update('6', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Cliente->update('6')
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-03 06:04:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`cliente`, CONSTRAINT `fk_cliente_usuario` FOREIGN KEY (`clie_usua_id`) REFERENCES `usuario` (`usua_id`) ON UPDATE CASCADE) in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `cliente...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cliente...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cliente...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `cliente...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/app/public_html/panca/system/BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /home/app/public_html/panca/system/Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 /home/app/public_html/panca/app/Controllers/Cliente.php(216): CodeIgniter\Model->update('6', Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Cliente->update('6')
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-03 06:04:17 --> Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`cliente`, CONSTRAINT `fk_cliente_usuario` FOREIGN KEY (`clie_usua_id`) REFERENCES `usuario` (`usua_id`) ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `cliente` SET `clie_usua_id` = NULL, `clie_nombres` = \'Cesar\', `clie_apellidos` = \'Fasa\', `clie_dni` = \'1111111\', `clie_celular` = \'1111111\', `clie_correo` = \'c@upeu.edu.pe\'
+WHERE `cliente`.`clie_id` IN (\'6\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cliente` SET `clie_usua_id` = NULL, `clie_nombres` = \'Cesar\', `clie_apellidos` = \'Fasa\', `clie_dni` = \'1111111\', `clie_celular` = \'1111111\', `clie_correo` = \'c@upeu.edu.pe\'
+WHERE `cliente`.`clie_id` IN (\'6\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cliente` SET `clie_usua_id` = NULL, `clie_nombres` = \'Cesar\', `clie_apellidos` = \'Fasa\', `clie_dni` = \'1111111\', `clie_celular` = \'1111111\', `clie_correo` = \'c@upeu.edu.pe\'
+WHERE `cliente`.`clie_id` IN (\'6\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `cliente` SET `clie_usua_id` = :clie_usua_id:, `clie_nombres` = :clie_nombres:, `clie_apellidos` = :clie_apellidos:, `clie_dni` = :clie_dni:, `clie_celular` = :clie_celular:, `clie_correo` = :clie_correo:
+WHERE `cliente`.`clie_id` IN :cliente.clie_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH/Controllers/Cliente.php(216): CodeIgniter\Model->update('6', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Cliente->update('6')
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 06:04:36 --> Undefined index: clie_usua_id
+in APPPATH/Controllers/Cliente.php on line 208.
+ 1 APPPATH/Controllers/Cliente.php(208): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: clie_usua_id', '/home/app/public_html/panca/app/Controllers/Cliente.php', 208, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Cliente->update('6')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 13:03:38 --> Too few arguments to function App\Controllers\Admin::get_usuario(), 0 passed in /home/app/public_html/panca/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Admin.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->get_usuario()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 13:04:17 --> Method name must be a string
+in APPPATH/Controllers/Admin.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 13:05:25 --> Method name must be a string
+in APPPATH/Controllers/Admin.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 13:05:43 --> Undefined property: App\Controllers\Admin::$db
+in APPPATH/Controllers/Admin.php on line 10.
+ 1 APPPATH/Controllers/Admin.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Admin::$db', '/home/app/public_html/panca/app/Controllers/Admin.php', 10, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 13:06:02 --> Undefined property: App\Controllers\Admin::$db
+in APPPATH/Controllers/Admin.php on line 10.
+ 1 APPPATH/Controllers/Admin.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Admin::$db', '/home/app/public_html/panca/app/Controllers/Admin.php', 10, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-03 13:06:03 --> Undefined property: App\Controllers\Admin::$db
+in APPPATH/Controllers/Admin.php on line 10.
+ 1 APPPATH/Controllers/Admin.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Admin::$db', '/home/app/public_html/panca/app/Controllers/Admin.php', 10, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

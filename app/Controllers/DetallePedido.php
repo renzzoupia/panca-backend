@@ -2,27 +2,27 @@
 namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\DetallePedidoModel;
-use App\Models\RegistrosModel;
+use App\Models\UsuarioModel;
 class DetallePedido extends Controller{
 
     public function index(){
         $request = \Config\Services::request();
         $validation = \Config\Services::validation();
         $headers = $request->getHeaders();
-        $model = new RegistrosModel();
-        $registro = $model->where('reg_estado', 1) -> findAll();
+        $model = new UsuarioModel();
+        $registro = $model -> where('usua_estado', 1) -> findAll();
         
         foreach($registro as $key => $value){
             if(array_key_exists('Authorization',$headers)&& !empty($headers['Authorization'])){
                 if($request -> getHeader('Authorization') == 'Authorization: Basic '
-                .base64_encode($value['reg_clientes_id'].':'.$value['reg_llave_secreta'])){
+                .base64_encode($value['usua_user_secreto'].':'.$value['usua_llave_secreta'])){
                     $model = new DetallePedidoModel();
-                    $detallePedido = $model -> getDetallePedido();
-                    if(!empty($detallePedido)){
+                    $detallepedido = $model -> getDetallePedido();
+                    if(!empty($detallepedido)){
                         $data = array(
                             "Status" => 200, 
-                            "Total de registros" => count($detallePedido),
-                            "Detalles" => $detallePedido
+                            "Total de registros" => count($detallepedido),
+                            "Detalles" => $detallepedido
                         );
                     }else{
                         $data = array(
@@ -53,20 +53,20 @@ class DetallePedido extends Controller{
         $request = \Config\Services::request();
         $validation = \Config\Services::validation();
         $headers = $request -> getHeaders();
-        $model = new RegistrosModel();
-        $registro = $model -> where('reg_estado', 1) -> findAll();
-        //var_dump($registro); die;
+        $model = new UsuarioModel();
+        $registro = $model->where('usua_estado', 1) -> findAll();
+        
         foreach($registro as $key => $value){
-            if(array_key_exists('Authorization', $headers) && !empty($headers['Authorization'])){
+            if(array_key_exists('Authorization',$headers)&& !empty($headers['Authorization'])){
                 if($request -> getHeader('Authorization') == 'Authorization: Basic '
-                .base64_encode($value['reg_clientes_id'].':'.$value['reg_llave_secreta'])){
+                .base64_encode($value['usua_user_secreto'].':'.$value['usua_llave_secreta'])){
                     $model = new DetallePedidoModel();
-                    $detallePedido = $model -> getId($id);
-                    //var_dump($detallePedido); die;
-                    if(!empty($detallePedido)){
+                    $detallepedido = $model -> getId($id);
+                    //var_dump($curso); die;
+                    if(!empty($detallepedido)){
                         $data = array(
                             "Status" => 200,
-                            "Detalles" => $detallePedido
+                            "Detalles" => $detallepedido
                         );
                     }else{
                         $data = array(
@@ -95,34 +95,25 @@ class DetallePedido extends Controller{
         $request = \Config\Services::request();
         $validation = \Config\Services::validation();
         $headers = $request -> getHeaders();
-        $model = new RegistrosModel();
-        $registro = $model -> where('reg_estado', 1) -> findAll();
+        $model = new UsuarioModel();
+        $registro = $model->where('usua_estado', 1) -> findAll();
         //var_dump($registro); die;
         foreach($registro as $key => $value){
-            if(array_key_exists('Authorization', $headers) && !empty($headers['Authorization'])){
+            if(array_key_exists('Authorization',$headers)&& !empty($headers['Authorization'])){
                 if($request -> getHeader('Authorization') == 'Authorization: Basic '
-                .base64_encode($value['reg_clientes_id'].':'.$value['reg_llave_secreta'])){
+                .base64_encode($value['usua_user_secreto'].':'.$value['usua_llave_secreta'])){
                         $datos = array(
-                            "ped_id" => $request -> getVar("ped_id"),
-                            "depe_estado_comida" => $request -> getVar("depe_estado_comida"),
-                            "depe_fecha" => $request -> getVar("depe_fecha"),
-                            "tipa_id" => $request -> getVar("tipa_id"),
-                            "depe_num_mesa" => $request -> getVar("depe_num_mesa"),
-                            "deco_info_compra" => $request -> getVar("deco_info_compra"),
-                            "tra_id" => $request -> getVar("tra_id"),
-                            "ticon_id" => $request -> getVar("ticon_id")
+                            "depe_pedi_id" => $request -> getVar("depe_pedi_id"),
+                            "depe_prod_id" => $request -> getVar("depe_prod_id"),
+                            "depe_cantidad" => $request -> getVar("depe_cantidad"),
+                            "depe_subtotal" => $request -> getVar("depe_subtotal")
                         );
                         if(!empty($datos)){
                             $validation -> setRules([
-                                "ped_id" =>'required|integer',
-                                "depe_estado_comida" => 'required|string|max_length[100]',
-                                "depe_fecha" => 'required|date',
-                                "tipa_id" => 'required|integer',
-                                "depe_num_mesa" => 'required|string|max_length[100]',
-                                "deco_info_compra" => 'required|string|max_length[100]',
-                                "tra_id" => 'required|integer',
-                                "ticon_id" => 'required|integer'
-                                
+                                "depe_pedi_id" => 'required|integer',
+                                "depe_prod_id" => 'required|integer',
+                                "depe_cantidad" => 'required|integer',
+                                "depe_subtotal" => 'required|decimal'
                             ]);
                             $validation -> withRequest($this -> request) -> run();
                             if($validation -> getErrors()){
@@ -134,17 +125,13 @@ class DetallePedido extends Controller{
                                 return json_encode($data, true);
                             }else{
                                 $datos = array(
-                                    "ped_id" => $datos["ped_id"],
-                                    "depe_estado_comida" => $datos["depe_estado_comida"],
-                                    "depe_fecha" => $datos["depe_fecha"],
-                                    "tipa_id" => $datos["tipa_id"],
-                                    "depe_num_mesa" => $datos["depe_num_mesa"],
-                                    "deco_info_compra" => $datos["deco_info_compra"],
-                                    "tra_id" => $datos["tra_id"],
-                                    "ticon_id" => $datos["ticon_id"]
+                                    "depe_pedi_id" => $datos["depe_pedi_id"],
+                                    "depe_prod_id" => $datos["depe_prod_id"],
+                                    "depe_cantidad" => $datos["depe_cantidad"],
+                                    "depe_subtotal" => $datos["depe_subtotal"]
                                 );
                                 $model = new DetallePedidoModel();
-                                $detallePedido = $model -> insert($datos);
+                                $curso = $model -> insert($datos);
                                 $data = array(
                                     "Status" => 200,
                                     "Detalles" => "Registro existoso"
@@ -178,23 +165,19 @@ class DetallePedido extends Controller{
         $request = \Config\Services::request();
         $validation = \Config\Services::validation();
         $headers = $request -> getHeaders();
-        $model = new RegistrosModel();
-        $registro = $model -> where('reg_estado', 1) -> findAll();
+        $model = new UsuarioModel();
+        $registro = $model->where('usua_estado', 1) -> findAll();
         foreach($registro as $key => $value){
-            if(array_key_exists('Authorization', $headers) && !empty($headers['Authorization'])){
+            if(array_key_exists('Authorization',$headers)&& !empty($headers['Authorization'])){
                 if($request -> getHeader('Authorization') == 'Authorization: Basic '
-                .base64_encode($value['reg_clientes_id'].':'.$value['reg_llave_secreta'])){
+                .base64_encode($value['usua_user_secreto'].':'.$value['usua_llave_secreta'])){
                     $datos = $this -> request -> getRawInput();
                     if(!empty($datos)){
                         $validation -> setRules([
-                                "ped_id" =>'required|integer',
-                                "depe_estado_comida" => 'required|string|max_length[100]',
-                                "depe_fecha" => 'required|date',
-                                "tipa_id" => 'required|integer',
-                                "depe_num_mesa" => 'required|string|max_length[100]',
-                                "deco_info_compra" => 'required|string|max_length[100]',
-                                "tra_id" => 'required|integer',
-                                "ticon_id" => 'required|integer'
+                            "depe_pedi_id" => 'required|integer',
+                            "depe_prod_id" => 'required|integer',
+                            "depe_cantidad" => 'required|integer',
+                            "depe_subtotal" => 'required|decimal'
                         ]);
                         $validation -> withRequest($this -> request) -> run();
                         if($validation -> getErrors()){
@@ -206,8 +189,8 @@ class DetallePedido extends Controller{
                             return json_encode($data, true);
                         }else{
                             $model = new DetallePedidoModel();
-                            $detallePedido = $model -> find($id);
-                            if(is_null($detallePedido)){
+                            $detallepedido = $model -> find($id);
+                            if(is_null($detallepedido)){
                                 $data = array(
                                     "Status" => 404,
                                     "Detalles" => "Registro no existe"
@@ -215,17 +198,13 @@ class DetallePedido extends Controller{
                                 return json_encode($data, true);
                             }else{
                                 $datos = array(
-                                    "ped_id" => $datos["ped_id"],
-                                    "depe_estado_comida" => $datos["depe_estado_comida"],
-                                    "depe_fecha" => $datos["depe_fecha"],
-                                    "tipa_id" => $datos["tipa_id"],
-                                    "depe_num_mesa" => $datos["depe_num_mesa"],
-                                    "deco_info_compra" => $datos["deco_info_compra"],
-                                    "tra_id" => $datos["tra_id"],
-                                    "ticon_id" => $datos["ticon_id"]
+                                    "depe_pedi_id" => $datos["depe_pedi_id"],
+                                    "depe_prod_id" => $datos["depe_prod_id"],
+                                    "depe_cantidad" => $datos["depe_cantidad"],
+                                    "depe_subtotal" => $datos["depe_subtotal"]
                                 );
                                 $model = new DetallePedidoModel();
-                                $detallePedido = $model -> update($id, $datos);
+                                $detallepedido = $model -> update($id, $datos);
                                 $data = array(
                                     "Status" => 200,
                                     "Detalles" => "Datos actualizados"
@@ -260,21 +239,21 @@ class DetallePedido extends Controller{
         $request = \Config\Services::request();
         $validation = \Config\Services::validation();
         $headers = $request -> getHeaders();
-        $model = new RegistrosModel();
-        $registro = $model -> where('reg_estado', 1) -> findAll();
+        $model = new UsuarioModel();
+        $registro = $model->where('usua_estado', 1) -> findAll();
         
         foreach($registro as $key => $value){
-            if(array_key_exists('Authorization', $headers) && !empty($headers['Authorization'])){
+            if(array_key_exists('Authorization',$headers)&& !empty($headers['Authorization'])){
                 if($request -> getHeader('Authorization') == 'Authorization: Basic '
-                .base64_encode($value['reg_clientes_id'].':'.$value['reg_llave_secreta'])){
+                .base64_encode($value['usua_user_secreto'].':'.$value['usua_llave_secreta'])){
                     $model = new DetallePedidoModel();
-                    $detallePedido = $model -> where('depe_estado',1) -> find($id);
+                    $detallepedido = $model -> where('depe_estado',1) -> find($id);
                     //var_dump($curso); die;
-                    if(!empty($detallePedido)){
+                    if(!empty($detallepedido)){
                         $datos = array(
                             "depe_estado" => 0
                         );
-                        $detallePedido = $model -> update($id, $datos);
+                        $detallepedido = $model -> update($id, $datos);
                         $data = array(
                             "Status" => 200, 
                             "Detalles" => "Se ha eliminado el registro"

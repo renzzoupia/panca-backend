@@ -1,0 +1,9 @@
+CRITICAL - 2024-05-05 21:27:21 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 7.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('admin/.git/config')
+ 3 SYSTEMPATH/Router/Router.php(206): CodeIgniter\Router\Router->autoRoute('admin/.git/config')
+ 4 SYSTEMPATH/CodeIgniter.php(815): CodeIgniter\Router\Router->handle('admin/.git/config')
+ 5 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

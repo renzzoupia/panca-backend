@@ -6,8 +6,7 @@ class TipoProductoModel extends Model{
     protected $primaryKey = 'tipr_id';
     protected $returnType = 'array';
     protected $allowedFields = [
-        'tipr_tipo',
-        'tipr_descripcion',
+        'tipr_nombre',
         'tipr_estado'
     ];
 }

@@ -1,0 +1,106 @@
+CRITICAL - 2023-11-10 05:12:01 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 05:12:52 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 05:15:53 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 05:15:56 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 05:18:14 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 05:22:43 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 05:22:46 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 05:48:02 --> Too few arguments to function App\Controllers\Login::create(), 0 passed in /home/app/public_html/panca/system/CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH/Controllers/Login.php on line 6.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 05:48:29 --> Too few arguments to function App\Controllers\Login::create(), 0 passed in /home/app/public_html/panca/system/CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH/Controllers/Login.php on line 6.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 07:09:05 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 11:43:19 --> Class 'App\Controllers\comprobanteModel' not found
+in APPPATH/Controllers/Login.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Login->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

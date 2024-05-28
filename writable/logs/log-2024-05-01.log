@@ -1,0 +1,29 @@
+ERROR - 2024-05-01 23:18:59 --> mysqli_sql_exception: Duplicate entry '104' for key 'unq_cliente_clie_usua_id' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panca/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panca/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panca/app/Controllers/Cliente.php(146): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Cliente->create()
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-01 23:18:59 --> Duplicate entry '104' for key 'unq_cliente_clie_usua_id'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`, `clie_foto`, `clie_direccion`) VALUES (\'104\', \'papa\', \'rios\', \'111114\', \'956\', \'heiser.vela311@gmail.com.com\', \'papa.jpg\', \'jiron\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`, `clie_foto`, `clie_direccion`) VALUES (\'104\', \'papa\', \'rios\', \'111114\', \'956\', \'heiser.vela311@gmail.com.com\', \'papa.jpg\', \'jiron\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`, `clie_foto`, `clie_direccion`) VALUES (\'104\', \'papa\', \'rios\', \'111114\', \'956\', \'heiser.vela311@gmail.com.com\', \'papa.jpg\', \'jiron\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`, `clie_foto`, `clie_direccion`) VALUES (:clie_usua_id:, :clie_nombres:, :clie_apellidos:, :clie_dni:, :clie_celular:, :clie_correo:, :clie_foto:, :clie_direccion:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Cliente.php(146): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Cliente->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

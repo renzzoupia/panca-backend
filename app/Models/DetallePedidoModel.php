@@ -6,24 +6,18 @@ class DetallePedidoModel extends Model{
     protected $primaryKey = 'depe_id';
     protected $returnType = 'array';
     protected $allowedFields = [
-        'ped_id',
-        'depe_estado_comida',
-        'depe_fecha',
-        'tipa_id',
-        'depe_num_mesa',
-        'deco_info_compra',
-        'tra_id',
-        'ticon_id',
+        'depe_pedi_id',
+        'depe_prod_id',
+        'depe_cantidad',
+        'depe_subtotal',
         'depe_estado'
     ];
 
     public function getDetallePedido(){
         return $this -> db -> table('detalle_pedido dp')
         -> where('dp.depe_estado', 1)
-        -> join('pedidos pd', 'dp.ped_id = pd.ped_id')
-        -> join('tipo_pago tp', 'dp.tipa_id = tp.tipa_id')
-        -> join('trabajadores tb', 'dp.tra_id = tb.tra_id')
-        -> join('tipo_consumo tc', 'dp.ticon_id = tc.ticon_id')
+        -> join('pedido p', 'p.pedi_id = dp.depe_pedi_id')
+        -> join('producto pd', 'pd.prod_id = dp.depe_prod_id')
         -> get() -> getResultArray();
     }
 
@@ -31,34 +25,19 @@ class DetallePedidoModel extends Model{
         return $this -> db -> table('detalle_pedido dp')
         -> where('dp.depe_id', $id)
         -> where('dp.depe_estado', 1)
-        -> join('pedidos pd', 'dp.ped_id = pd.ped_id')
-        -> join('tipo_pago tp', 'dp.tipa_id = tp.tipa_id')
-        -> join('trabajadores tb', 'dp.tra_id = tb.tra_id')
-        -> join('tipo_consumo tc', 'dp.ticon_id = tc.ticon_id')
+        -> join('pedido p', 'p.pedi_id = dp.depe_pedi_id')
+        -> join('producto pd', 'pd.prod_id = dp.depe_prod_id')
         -> get() -> getResultArray();
     }
 
-    public function getPedidos(){        
-        return $this -> db -> table('pedidos pd')
-        -> where('pd.ped_estado', 1)
+    public function getPedido(){
+        return $this -> db -> table('pedido p')
+        -> where('p.pedi_estado', 1)
         -> get() -> getResultArray();
     }
-
-    public function getTipoPago(){        
-        return $this -> db -> table('tipo_pago tp')
-        -> where('tp.tipa_pago', 1)
-        -> get() -> getResultArray();
-    }
-   
-    public function getTrabajadores(){        
-        return $this -> db -> table('trabajadores tb')
-        -> where('tb.tra_estado', 1)
-        -> get() -> getResultArray();
-    }
-    
-    public function getTipoConsumo(){        
-        return $this -> db -> table('tipo_consumo tc')
-        //-> where('pv.estado', 1)
+    public function getProducto(){
+        return $this -> db -> table('producto pd')
+        -> where('pd.prod_estado', 1)
         -> get() -> getResultArray();
     }
 }

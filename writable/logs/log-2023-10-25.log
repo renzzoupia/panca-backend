@@ -1,0 +1,190 @@
+ERROR - 2023-10-25 00:01:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`mesa`, CONSTRAINT `fk_mesa_usuario` FOREIGN KEY (`mesa_rest_id`) REFERENCES `restaurante` (`rest_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `mesa` S...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mesa` S...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mesa` S...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mesa` S...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/app/public_html/panca/system/BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /home/app/public_html/panca/system/Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 /home/app/public_html/panca/app/Controllers/Mesa.php(210): CodeIgniter\Model->update('1', Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Mesa->update('1')
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-25 00:01:15 --> Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`mesa`, CONSTRAINT `fk_mesa_usuario` FOREIGN KEY (`mesa_rest_id`) REFERENCES `restaurante` (`rest_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `mesa` SET `mesa_rest_id` = \'2\', `mesa_numero` = \'B-004\', `mesa_cantidad_personas` = \'4\', `mesa_activo` = \'0\'
+WHERE `mesa`.`mesa_id` IN (\'1\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mesa` SET `mesa_rest_id` = \'2\', `mesa_numero` = \'B-004\', `mesa_cantidad_personas` = \'4\', `mesa_activo` = \'0\'
+WHERE `mesa`.`mesa_id` IN (\'1\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mesa` SET `mesa_rest_id` = \'2\', `mesa_numero` = \'B-004\', `mesa_cantidad_personas` = \'4\', `mesa_activo` = \'0\'
+WHERE `mesa`.`mesa_id` IN (\'1\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `mesa` SET `mesa_rest_id` = :mesa_rest_id:, `mesa_numero` = :mesa_numero:, `mesa_cantidad_personas` = :mesa_cantidad_personas:, `mesa_activo` = :mesa_activo:
+WHERE `mesa`.`mesa_id` IN :mesa.mesa_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH/Controllers/Mesa.php(210): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Mesa->update('1')
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 00:01:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`mesa`, CONSTRAINT `fk_mesa_usuario` FOREIGN KEY (`mesa_rest_id`) REFERENCES `restaurante` (`rest_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `me...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `me...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `me...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `me...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panca/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panca/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panca/app/Controllers/Mesa.php(136): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Mesa->create()
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-25 00:01:38 --> Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`mesa`, CONSTRAINT `fk_mesa_usuario` FOREIGN KEY (`mesa_rest_id`) REFERENCES `restaurante` (`rest_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `mesa` (`mesa_rest_id`, `mesa_numero`, `mesa_cantidad_personas`, `mesa_activo`) VALUES (\'2\', \'B-004\', \'4\', \'0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `mesa` (`mesa_rest_id`, `mesa_numero`, `mesa_cantidad_personas`, `mesa_activo`) VALUES (\'2\', \'B-004\', \'4\', \'0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `mesa` (`mesa_rest_id`, `mesa_numero`, `mesa_cantidad_personas`, `mesa_activo`) VALUES (\'2\', \'B-004\', \'4\', \'0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `mesa` (`mesa_rest_id`, `mesa_numero`, `mesa_cantidad_personas`, `mesa_activo`) VALUES (:mesa_rest_id:, :mesa_numero:, :mesa_cantidad_personas:, :mesa_activo:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Mesa.php(136): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Mesa->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mesa))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 00:06:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`reserva`, CONSTRAINT `fk_reserva_mesa` FOREIGN KEY (`rese_mesa_id`) REFERENCES `mesa` (`mesa_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `reserva...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `reserva...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `reserva...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `reserva...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/app/public_html/panca/system/BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /home/app/public_html/panca/system/Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 /home/app/public_html/panca/app/Controllers/Reserva.php(212): CodeIgniter\Model->update('1', Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reserva->update('1')
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reserva))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-25 00:06:51 --> Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`reserva`, CONSTRAINT `fk_reserva_mesa` FOREIGN KEY (`rese_mesa_id`) REFERENCES `mesa` (`mesa_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `reserva` SET `rese_mesa_id` = \'2\', `rese_clie_id` = \'2\', `rese_fecha` = \'23-10-24\', `rese_hora` = \'14:00\', `rese_personas` = \'2\'
+WHERE `reserva`.`rese_id` IN (\'1\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `reserva` SET `rese_mesa_id` = \'2\', `rese_clie_id` = \'2\', `rese_fecha` = \'23-10-24\', `rese_hora` = \'14:00\', `rese_personas` = \'2\'
+WHERE `reserva`.`rese_id` IN (\'1\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `reserva` SET `rese_mesa_id` = \'2\', `rese_clie_id` = \'2\', `rese_fecha` = \'23-10-24\', `rese_hora` = \'14:00\', `rese_personas` = \'2\'
+WHERE `reserva`.`rese_id` IN (\'1\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `reserva` SET `rese_mesa_id` = :rese_mesa_id:, `rese_clie_id` = :rese_clie_id:, `rese_fecha` = :rese_fecha:, `rese_hora` = :rese_hora:, `rese_personas` = :rese_personas:
+WHERE `reserva`.`rese_id` IN :reserva.rese_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH/Controllers/Reserva.php(212): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reserva->update('1')
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reserva))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 00:07:00 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`reserva`, CONSTRAINT `fk_reserva_cliente` FOREIGN KEY (`rese_clie_id`) REFERENCES `cliente` (`clie_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `reserva...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `reserva...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `reserva...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `reserva...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/app/public_html/panca/system/BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /home/app/public_html/panca/system/Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 /home/app/public_html/panca/app/Controllers/Reserva.php(212): CodeIgniter\Model->update('1', Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reserva->update('1')
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reserva))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-25 00:07:00 --> Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`reserva`, CONSTRAINT `fk_reserva_cliente` FOREIGN KEY (`rese_clie_id`) REFERENCES `cliente` (`clie_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `reserva` SET `rese_mesa_id` = \'1\', `rese_clie_id` = \'2\', `rese_fecha` = \'23-10-24\', `rese_hora` = \'14:00\', `rese_personas` = \'2\'
+WHERE `reserva`.`rese_id` IN (\'1\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `reserva` SET `rese_mesa_id` = \'1\', `rese_clie_id` = \'2\', `rese_fecha` = \'23-10-24\', `rese_hora` = \'14:00\', `rese_personas` = \'2\'
+WHERE `reserva`.`rese_id` IN (\'1\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `reserva` SET `rese_mesa_id` = \'1\', `rese_clie_id` = \'2\', `rese_fecha` = \'23-10-24\', `rese_hora` = \'14:00\', `rese_personas` = \'2\'
+WHERE `reserva`.`rese_id` IN (\'1\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `reserva` SET `rese_mesa_id` = :rese_mesa_id:, `rese_clie_id` = :rese_clie_id:, `rese_fecha` = :rese_fecha:, `rese_hora` = :rese_hora:, `rese_personas` = :rese_personas:
+WHERE `reserva`.`rese_id` IN :reserva.rese_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH/Controllers/Reserva.php(212): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reserva->update('1')
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reserva))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 00:07:10 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`reserva`, CONSTRAINT `fk_reserva_cliente` FOREIGN KEY (`rese_clie_id`) REFERENCES `cliente` (`clie_id`) ON DELETE NO ACTION ON UPDATE NO ACTION) in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `reserva...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `reserva...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `reserva...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `reserva...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 /home/app/public_html/panca/system/BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 /home/app/public_html/panca/system/Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 /home/app/public_html/panca/app/Controllers/Reserva.php(212): CodeIgniter\Model->update('1', Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reserva->update('1')
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reserva))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-25 00:07:10 --> Cannot add or update a child row: a foreign key constraint fails (`app_panca`.`reserva`, CONSTRAINT `fk_reserva_cliente` FOREIGN KEY (`rese_clie_id`) REFERENCES `cliente` (`clie_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `reserva` SET `rese_mesa_id` = \'1\', `rese_clie_id` = \'3\', `rese_fecha` = \'23-10-24\', `rese_hora` = \'14:00\', `rese_personas` = \'2\'
+WHERE `reserva`.`rese_id` IN (\'1\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `reserva` SET `rese_mesa_id` = \'1\', `rese_clie_id` = \'3\', `rese_fecha` = \'23-10-24\', `rese_hora` = \'14:00\', `rese_personas` = \'2\'
+WHERE `reserva`.`rese_id` IN (\'1\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `reserva` SET `rese_mesa_id` = \'1\', `rese_clie_id` = \'3\', `rese_fecha` = \'23-10-24\', `rese_hora` = \'14:00\', `rese_personas` = \'2\'
+WHERE `reserva`.`rese_id` IN (\'1\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `reserva` SET `rese_mesa_id` = :rese_mesa_id:, `rese_clie_id` = :rese_clie_id:, `rese_fecha` = :rese_fecha:, `rese_hora` = :rese_hora:, `rese_personas` = :rese_personas:
+WHERE `reserva`.`rese_id` IN :reserva.rese_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH/BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH/Controllers/Reserva.php(212): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reserva->update('1')
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reserva))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-25 00:23:44 --> mysqli_sql_exception: Duplicate entry '9' for key 'unq_cliente_clie_usua_id' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `cl...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cl...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cl...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panca/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panca/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panca/app/Controllers/Cliente.php(140): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Cliente->create()
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-25 00:23:44 --> Duplicate entry '9' for key 'unq_cliente_clie_usua_id'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (\'9\', \'Denis\', \'Trigoso\', \'22222222\', \'222222222\', \'c@upeu.edu.pe\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (\'9\', \'Denis\', \'Trigoso\', \'22222222\', \'222222222\', \'c@upeu.edu.pe\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (\'9\', \'Denis\', \'Trigoso\', \'22222222\', \'222222222\', \'c@upeu.edu.pe\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cliente` (`clie_usua_id`, `clie_nombres`, `clie_apellidos`, `clie_dni`, `clie_celular`, `clie_correo`) VALUES (:clie_usua_id:, :clie_nombres:, :clie_apellidos:, :clie_dni:, :clie_celular:, :clie_correo:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Cliente.php(140): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Cliente->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cliente))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -30,28 +30,25 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/admin', 'Admin::vista');
+$routes->get('/admin', 'Admin::login');
 
-$routes -> resource('admin');
-$routes -> resource('proveedores');//importante poner la cantidad de tablas //check
-$routes -> resource('inventario');//check
-$routes -> resource('productos');//check
-$routes -> resource('usuarios');//check
-$routes -> resource('platos');//check
-$routes -> resource('reclamos');//check
-$routes -> resource('pedidos'); //check
-$routes -> resource('DetallePedido');//check
-$routes -> resource('clientes');//check
-$routes -> resource('personas');//check
-$routes -> resource('trabajadores');//check
-$routes -> resource('boletas');//check
-$routes -> resource('registros');//check
-$routes -> resource('TipoProducto');//check
-$routes -> resource('permisos');//check
-$routes -> resource('reservas');//check
-$routes -> resource('TipoComida');//check
-$routes -> resource('TipoTrabajador');//check
-$routes -> resource('TipoAdmin');//check
+$routes -> resource('cliente');//importante poner la cantidad de tablas //check
+$routes -> resource('comprobante');
+$routes -> resource('DetalleComprobante');
+$routes -> resource('DetalleDelivery');
+$routes -> resource('DetallePedido');
+$routes -> resource('mesa');
+$routes -> resource('pedido');
+$routes -> resource('producto');
+$routes -> resource('reserva');
+$routes -> resource('ReservaFiltrada');
+$routes -> resource('restaurante');
+$routes -> resource('TipoProducto');
+$routes -> resource('TipoUsuario');
+$routes -> resource('usuario');
+$routes -> resource('login');
+$routes -> resource('recuperar');
+$routes -> resource('descargar');
 
 
 /*

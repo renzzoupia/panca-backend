@@ -1,0 +1,31 @@
+CRITICAL - 2023-11-14 20:45:14 --> Call to a member function getRandomName() on null
+in APPPATH/Controllers/Producto.php on line 134.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Producto->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 20:46:02 --> Undefined index: empresa
+in APPPATH/Controllers/Producto.php on line 114.
+ 1 APPPATH/Controllers/Producto.php(114): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: empresa', '/home/app/public_html/panca/app/Controllers/Producto.php', 114, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Producto->create()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 20:46:38 --> Call to a member function getRandomName() on null
+in APPPATH/Controllers/Producto.php on line 134.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Producto->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 20:51:16 --> Call to a member function getRandomName() on null
+in APPPATH/Controllers/Producto.php on line 134.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Producto->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-14 20:58:45 --> Call to a member function getRandomName() on null
+in APPPATH/Controllers/Producto.php on line 134.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Producto->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

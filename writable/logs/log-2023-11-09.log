@@ -1,0 +1,6 @@
+CRITICAL - 2023-11-09 19:14:04 --> Cannot pass parameter 4 by reference
+in APPPATH/Controllers/Usuario.php on line 150.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuario->update('3')
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

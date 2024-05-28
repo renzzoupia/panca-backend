@@ -1,0 +1,18 @@
+CRITICAL - 2024-03-05 14:05:38 --> function_exists() has been disabled for security reasons
+in SYSTEMPATH/ThirdParty/Kint/init_helpers.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'function_exists() has been disabled for security reasons', '/home/app/public_html/panca/system/ThirdParty/Kint/init_helpers.php', 31, [])
+ 2 SYSTEMPATH/ThirdParty/Kint/init_helpers.php(31): function_exists('d')
+ 3 SYSTEMPATH/ThirdParty/Kint/init.php(71): require_once('/home/app/public_html/panca/system/ThirdParty/Kint/init_helpers.php')
+ 4 SYSTEMPATH/CodeIgniter.php(265): require_once('/home/app/public_html/panca/system/ThirdParty/Kint/init.php')
+ 5 SYSTEMPATH/CodeIgniter.php(236): CodeIgniter\CodeIgniter->autoloadKint()
+ 6 SYSTEMPATH/CodeIgniter.php(199): CodeIgniter\CodeIgniter->initializeKint()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2024-03-05 14:05:38 --> function_exists() has been disabled for security reasons
+in SYSTEMPATH/ThirdParty/Kint/init_helpers.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'function_exists() has been disabled for security reasons', '/home/app/public_html/panca/system/ThirdParty/Kint/init_helpers.php', 31, [])
+ 2 SYSTEMPATH/ThirdParty/Kint/init_helpers.php(31): function_exists('d')
+ 3 SYSTEMPATH/ThirdParty/Kint/init.php(71): require_once('/home/app/public_html/panca/system/ThirdParty/Kint/init_helpers.php')
+ 4 SYSTEMPATH/CodeIgniter.php(265): require_once('/home/app/public_html/panca/system/ThirdParty/Kint/init.php')
+ 5 SYSTEMPATH/CodeIgniter.php(236): CodeIgniter\CodeIgniter->autoloadKint()
+ 6 SYSTEMPATH/CodeIgniter.php(199): CodeIgniter\CodeIgniter->initializeKint()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->initialize()

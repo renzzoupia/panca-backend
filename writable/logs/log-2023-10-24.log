@@ -1,0 +1,426 @@
+CRITICAL - 2023-10-24 15:46:55 --> Call to undefined method App\Models\UsuarioModel::getPlatos
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Usuario.php(8): CodeIgniter\Model->__call('getPlatos', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuario->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-24 15:47:18 --> Call to undefined method App\Models\UsuarioModel::getUsuario
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Usuario.php(8): CodeIgniter\Model->__call('getUsuario', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuario->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-24 15:47:20 --> Call to undefined method App\Models\UsuarioModel::getUsuario
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Usuario.php(8): CodeIgniter\Model->__call('getUsuario', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuario->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-24 15:48:26 --> Call to undefined method App\Models\UsuarioModel::getUsuario
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Usuario.php(8): CodeIgniter\Model->__call('getUsuario', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuario->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-24 22:53:22 --> Call to undefined method App\Models\UsuarioModel::getUsuario
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Usuario.php(8): CodeIgniter\Model->__call('getUsuario', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuario->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-24 22:55:11 --> Call to undefined method App\Models\RestauranteModel::getRestaurante
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Controllers/Restaurante.php(20): CodeIgniter\Model->__call('getRestaurante', [])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Restaurante->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurante))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-24 22:56:33 --> mysqli_sql_exception: Unknown column 'm.rese_mesa_id' in 'on clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/ReservaModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/Reserva.php(20): App\Models\ReservaModel->getReserva()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Reserva->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reserva))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-24 22:56:33 --> Unknown column 'm.rese_mesa_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `reserva` `r`
+JOIN `mesa` `m` ON `m`.`rese_mesa_id` = `r`.`mesa_id`
+JOIN `cliente` `c` ON `c`.`rese_clie_id` = `r`.`clie_id`
+WHERE `r`.`rese_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `reserva` `r`
+JOIN `mesa` `m` ON `m`.`rese_mesa_id` = `r`.`mesa_id`
+JOIN `cliente` `c` ON `c`.`rese_clie_id` = `r`.`clie_id`
+WHERE `r`.`rese_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `reserva` `r`
+JOIN `mesa` `m` ON `m`.`rese_mesa_id` = `r`.`mesa_id`
+JOIN `cliente` `c` ON `c`.`rese_clie_id` = `r`.`clie_id`
+WHERE `r`.`rese_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `reserva` `r`
+JOIN `mesa` `m` ON `m`.`rese_mesa_id` = `r`.`mesa_id`
+JOIN `cliente` `c` ON `c`.`rese_clie_id` = `r`.`clie_id`
+WHERE `r`.`rese_estado` = :r.rese_estado:', [...], false)
+ 5 APPPATH/Models/ReservaModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Reserva.php(20): App\Models\ReservaModel->getReserva()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Reserva->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reserva))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-24 23:00:29 --> mysqli_sql_exception: Unknown column 'dp.deco_comp_id' in 'on clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/DetalleComprobanteModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/DetalleComprobante.php(20): App\Models\DetalleComprobanteModel->getDetalleComprobante()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\DetalleComprobante->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleComprobante))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-24 23:00:29 --> Unknown column 'dp.deco_comp_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `detalle_comprobante` `dc`
+JOIN `comprobante` `c` ON `c`.`comp_id` = `dp`.`deco_comp_id`
+JOIN `producto` `pd` ON `pd`.`prod_id` = `dp`.`deco_prod_id`
+WHERE `dc`.`deco_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detalle_comprobante` `dc`
+JOIN `comprobante` `c` ON `c`.`comp_id` = `dp`.`deco_comp_id`
+JOIN `producto` `pd` ON `pd`.`prod_id` = `dp`.`deco_prod_id`
+WHERE `dc`.`deco_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detalle_comprobante` `dc`
+JOIN `comprobante` `c` ON `c`.`comp_id` = `dp`.`deco_comp_id`
+JOIN `producto` `pd` ON `pd`.`prod_id` = `dp`.`deco_prod_id`
+WHERE `dc`.`deco_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detalle_comprobante` `dc`
+JOIN `comprobante` `c` ON `c`.`comp_id` = `dp`.`deco_comp_id`
+JOIN `producto` `pd` ON `pd`.`prod_id` = `dp`.`deco_prod_id`
+WHERE `dc`.`deco_estado` = :dc.deco_estado:', [...], false)
+ 5 APPPATH/Models/DetalleComprobanteModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/DetalleComprobante.php(20): App\Models\DetalleComprobanteModel->getDetalleComprobante()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\DetalleComprobante->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleComprobante))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-24 23:03:01 --> mysqli_sql_exception: Unknown column 'dp.deco_comp_id' in 'on clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/DetalleComprobanteModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/DetalleComprobante.php(20): App\Models\DetalleComprobanteModel->getDetalleComprobante()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\DetalleComprobante->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleComprobante))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-24 23:03:01 --> Unknown column 'dp.deco_comp_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `detalle_comprobante` `dc`
+JOIN `comprobante` `c` ON `c`.`comp_id` = `dp`.`deco_comp_id`
+JOIN `producto` `pd` ON `pd`.`prod_id` = `dp`.`deco_prod_id`
+WHERE `dc`.`deco_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detalle_comprobante` `dc`
+JOIN `comprobante` `c` ON `c`.`comp_id` = `dp`.`deco_comp_id`
+JOIN `producto` `pd` ON `pd`.`prod_id` = `dp`.`deco_prod_id`
+WHERE `dc`.`deco_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detalle_comprobante` `dc`
+JOIN `comprobante` `c` ON `c`.`comp_id` = `dp`.`deco_comp_id`
+JOIN `producto` `pd` ON `pd`.`prod_id` = `dp`.`deco_prod_id`
+WHERE `dc`.`deco_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detalle_comprobante` `dc`
+JOIN `comprobante` `c` ON `c`.`comp_id` = `dp`.`deco_comp_id`
+JOIN `producto` `pd` ON `pd`.`prod_id` = `dp`.`deco_prod_id`
+WHERE `dc`.`deco_estado` = :dc.deco_estado:', [...], false)
+ 5 APPPATH/Models/DetalleComprobanteModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/DetalleComprobante.php(20): App\Models\DetalleComprobanteModel->getDetalleComprobante()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\DetalleComprobante->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleComprobante))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-24 23:05:06 --> mysqli_sql_exception: Not unique table/alias: 'c' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/ComprobanteModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/Comprobante.php(20): App\Models\ComprobanteModel->getComprobante()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Comprobante->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comprobante))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-24 23:05:06 --> Not unique table/alias: 'c'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `c` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `c` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `c` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `c` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = :c.comp_estado:', [...], false)
+ 5 APPPATH/Models/ComprobanteModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Comprobante.php(20): App\Models\ComprobanteModel->getComprobante()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Comprobante->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comprobante))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-24 23:06:34 --> mysqli_sql_exception: Unknown column 'c.clie_id' in 'on clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/ComprobanteModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/Comprobante.php(20): App\Models\ComprobanteModel->getComprobante()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Comprobante->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comprobante))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-24 23:06:34 --> Unknown column 'c.clie_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `cl` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `cl` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `cl` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `cl` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = :c.comp_estado:', [...], false)
+ 5 APPPATH/Models/ComprobanteModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Comprobante.php(20): App\Models\ComprobanteModel->getComprobante()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Comprobante->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comprobante))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-24 23:06:37 --> mysqli_sql_exception: Unknown column 'c.clie_id' in 'on clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/app/Models/ComprobanteModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/app/Controllers/Comprobante.php(20): App\Models\ComprobanteModel->getComprobante()
+#6 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Comprobante->index()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comprobante))
+#8 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-24 23:06:37 --> Unknown column 'c.clie_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `cl` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `cl` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `cl` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `comprobante` `c`
+JOIN `restaurante` `r` ON `r`.`rest_id` = `c`.`comp_rest_id`
+JOIN `cliente` `cl` ON `c`.`clie_id` = `c`.`comp_clie_id`
+WHERE `c`.`comp_estado` = :c.comp_estado:', [...], false)
+ 5 APPPATH/Models/ComprobanteModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Comprobante.php(20): App\Models\ComprobanteModel->getComprobante()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Comprobante->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Comprobante))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-24 23:07:33 --> mysqli_sql_exception: Unknown column 'tipr_estado' in 'where clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/system/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/app/public_html/panca/app/Controllers/TipoUsuario.php(20): CodeIgniter\BaseModel->findAll()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\TipoUsuario->index()
+#8 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoUsuario))
+#9 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-24 23:07:33 --> Unknown column 'tipr_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `tipo_usuario`
+WHERE `tipr_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tipo_usuario`
+WHERE `tipr_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tipo_usuario`
+WHERE `tipr_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tipo_usuario`
+WHERE `tipr_estado` = :tipr_estado:', [...], false)
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/TipoUsuario.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TipoUsuario->index()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoUsuario))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-24 23:07:59 --> mysqli_sql_exception: Unknown column 'tipr_estado' in 'where clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/system/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/app/public_html/panca/app/Controllers/TipoUsuario.php(20): CodeIgniter\BaseModel->findAll()
+#7 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\TipoUsuario->index()
+#8 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoUsuario))
+#9 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-24 23:07:59 --> Unknown column 'tipr_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `tipo_usuario`
+WHERE `tipr_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tipo_usuario`
+WHERE `tipr_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tipo_usuario`
+WHERE `tipr_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tipo_usuario`
+WHERE `tipr_estado` = :tipr_estado:', [...], false)
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH/Controllers/TipoUsuario.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\TipoUsuario->index()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoUsuario))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-24 23:52:16 --> mysqli_sql_exception: Duplicate entry '4' for key 'unq_restaurante' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `re...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panca/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panca/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panca/app/Controllers/Restaurante.php(143): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Restaurante->create()
+#9 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurante))
+#10 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-24 23:52:16 --> Duplicate entry '4' for key 'unq_restaurante'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `restaurante` (`rest_usua_id`, `rest_razon_social`, `rest_ruc`, `rest_descrip`, `rest_direccion`, `rest_telefono`, `rest_horario`) VALUES (\'4\', \'La Panca- Yurimaguas\', \'20745000750\', \'Polleria y parillas\', \'Jr. Los maizales\', \'962844414\', \'7:00 a 18:00\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `restaurante` (`rest_usua_id`, `rest_razon_social`, `rest_ruc`, `rest_descrip`, `rest_direccion`, `rest_telefono`, `rest_horario`) VALUES (\'4\', \'La Panca- Yurimaguas\', \'20745000750\', \'Polleria y parillas\', \'Jr. Los maizales\', \'962844414\', \'7:00 a 18:00\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `restaurante` (`rest_usua_id`, `rest_razon_social`, `rest_ruc`, `rest_descrip`, `rest_direccion`, `rest_telefono`, `rest_horario`) VALUES (\'4\', \'La Panca- Yurimaguas\', \'20745000750\', \'Polleria y parillas\', \'Jr. Los maizales\', \'962844414\', \'7:00 a 18:00\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `restaurante` (`rest_usua_id`, `rest_razon_social`, `rest_ruc`, `rest_descrip`, `rest_direccion`, `rest_telefono`, `rest_horario`) VALUES (:rest_usua_id:, :rest_razon_social:, :rest_ruc:, :rest_descrip:, :rest_direccion:, :rest_telefono:, :rest_horario:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Restaurante.php(143): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Restaurante->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurante))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-24 23:58:45 --> mysqli_sql_exception: Unknown column 'tipr_estado' in 'where clause' in /home/app/public_html/panca/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panca/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panca/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panca/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panca/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panca/system/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panca/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '3')
+#6 /home/app/public_html/panca/app/Controllers/Restaurante.php(265): CodeIgniter\BaseModel->find('3')
+#7 /home/app/public_html/panca/system/CodeIgniter.php(934): App\Controllers\Restaurante->delete('3')
+#8 /home/app/public_html/panca/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurante))
+#9 /home/app/public_html/panca/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panca/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-24 23:58:45 --> Unknown column 'tipr_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `restaurante`
+WHERE `tipr_estado` = 1
+AND `restaurante`.`rest_id` = \'3\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `restaurante`
+WHERE `tipr_estado` = 1
+AND `restaurante`.`rest_id` = \'3\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `restaurante`
+WHERE `tipr_estado` = 1
+AND `restaurante`.`rest_id` = \'3\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `restaurante`
+WHERE `tipr_estado` = :tipr_estado:
+AND `restaurante`.`rest_id` = :restaurante.rest_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH/Controllers/Restaurante.php(265): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Restaurante->delete('3')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Restaurante))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

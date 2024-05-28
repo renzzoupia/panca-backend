@@ -1,0 +1,44 @@
+CRITICAL - 2024-04-25 05:13:57 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 05:16:13 --> Class 'App\Controllers\Controller' not found
+in APPPATH/Controllers/Admin.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Admin.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Admin')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Admin', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 05:22:54 --> Class 'CI_Controller' not found
+in APPPATH/Controllers/Descargar.php on line 2.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Descargar.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Descargar')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Descargar')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Descargar')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Descargar', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-25 05:23:21 --> Class 'CI_Controller' not found
+in APPPATH/Controllers/Descargar.php on line 2.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panca/app/Controllers/Descargar.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Descargar')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Descargar')
+ 5 [internal function]: spl_autoload_call('App\\Controllers\\Descargar')
+ 6 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Descargar', true)
+ 7 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,14 @@
+CRITICAL - 2023-11-19 05:02:05 --> Undefined property: App\Controllers\ReservaFiltrada::$load
+in APPPATH/Controllers/ReservaFiltrada.php on line 10.
+ 1 APPPATH/Controllers/ReservaFiltrada.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\ReservaFiltrada::$load', '/home/app/public_html/panca/app/Controllers/ReservaFiltrada.php', 10, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ReservaFiltrada->show('4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservaFiltrada))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-19 05:02:08 --> Undefined property: App\Controllers\ReservaFiltrada::$load
+in APPPATH/Controllers/ReservaFiltrada.php on line 10.
+ 1 APPPATH/Controllers/ReservaFiltrada.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\ReservaFiltrada::$load', '/home/app/public_html/panca/app/Controllers/ReservaFiltrada.php', 10, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\ReservaFiltrada->show('4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservaFiltrada))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
