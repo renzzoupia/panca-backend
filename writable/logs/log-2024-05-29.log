@@ -1,0 +1,18 @@
+CRITICAL - 2024-05-29 00:37:36 --> Call to a member function getRandomName() on null
+in APPPATH/Controllers/Producto.php on line 134.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Producto->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 01:48:35 --> Call to a member function getRandomName() on null
+in APPPATH/Controllers/Producto.php on line 134.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Producto->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-29 02:36:48 --> Call to a member function getRandomName() on null
+in APPPATH/Controllers/Producto.php on line 134.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Producto->create()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Producto))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
